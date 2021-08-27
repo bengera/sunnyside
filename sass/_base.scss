@@ -70,7 +70,74 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 
-    
+}
 
+.container {
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows: 100vh repeat(3, 1fr) 2fr 2fr 1fr;
 
 }
+
+.main {
+    grid-row: 2 / 6;
+}
+/* ===============
+   HEADER 
+   =============== */
+.header {
+    // background: url('../img/desktop-image-header.jpg');
+    background: url('../images/desktop/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    grid-column: 1 / -1;
+    grid-row: 1/ 1;
+}
+
+
+.row-2 {
+    background-color: $color-soft-yellow; 
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    
+}
+
+.row-3 {
+    background-color: $color-soft-red;
+}
+
+.row-4 {
+    background-color: $color-dark-moderate-cyan;
+}
+
+
+
+
+/* ===============
+   TESTIMONIALS 
+   =============== */
+.testimonials {
+    background-color: orangered;
+}
+
+
+
+   /* ===============
+  GALLERY 
+   =============== */
+.gallery {
+    background-color: yellowgreen;
+}
+
+
+   /* ===============
+   FOOTER 
+   =============== */
+.footer {
+    background-color: skyblue;
+}
+
+
+
