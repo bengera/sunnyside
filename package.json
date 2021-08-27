@@ -1,0 +1,22 @@
+{
+  "name": "sunny-fem",
+  "version": "1.0.0",
+  "description": "sunnyside-landing-page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengera/sunnyside.git"
+  },
+  "author": "Ben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengera/sunnyside/issues"
+  },
+  "homepage": "https://github.com/bengera/sunnyside#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

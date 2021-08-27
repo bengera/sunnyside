@@ -1,0 +1,76 @@
+// PRIMARY COLORS
+$color-soft-red: hsl(7, 99%, 70%);
+$color-soft-yellow: hsl(51, 100%, 49%);
+$color-dark-desaturated-cyan: hsl(167, 40%, 24%);
+$color-dark-blue: hsl(198, 62%, 26%);
+$color-dark-moderate-cyan: hsl(168, 34%, 41%);
+
+// NEUTRAL COLORS
+$color-dark-desaturated-blue: hsl(212, 27%, 19%);
+$color-dark-grayish-blue: hsl(213, 9%, 39%);
+$color-grayish-blue: hsl(232, 10%, 55%);
+$color-grayish-blue: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+
+// FONT VARIABLES
+$font-barlow: 'Barlow', //600
+sans-serif;
+$font-fraunces: 'Fraunces',
+sans-serif; //700,900
+
+
+
+// GENERAL
+@mixin transition-basic {
+    transition: all 0.3s;
+
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+
+// RESPONSIVE BREAKPOINTS
+$bp-larger: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        // font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        // font-size: 35%;
+    }
+
+}
+
+body {
+    font-family: $font-barlow;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+    
+
+
+}
