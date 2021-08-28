@@ -14,7 +14,8 @@ $color-white: hsl(0, 0%, 100%);
 
 
 // FONT VARIABLES
-$font-barlow: 'Barlow', //600
+$font-barlow: 'Barlow',
+//600
 sans-serif;
 $font-fraunces: 'Fraunces',
 sans-serif; //700,900
@@ -74,14 +75,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns:repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100vh repeat(3, 1fr) 2fr 2fr 1fr;
 
 }
 
 .main {
     grid-row: 2 / 6;
+    grid-column: 1 / -1;
 }
+
 /* ===============
    HEADER 
    =============== */
@@ -94,14 +97,60 @@ body {
     color: $color-white;
     grid-column: 1 / -1;
     grid-row: 1/ 1;
+    position: relative;
+
+    &__title {
+        position: absolute;
+        top: 25%;
+        text-transform: uppercase;
+        width: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: $font-fraunces;
+        font-size: 6.2rem;
+        letter-spacing: 0.123em;
+        font-weight: 800;
+    }
+
+    &__logo {
+        padding: 4rem;
+        
+    }
+
+    &__logo-img {
+        height: 3.6rem;
+    }
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============
+   ROWS
+   =============== */
+
 .row-2 {
-    background-color: $color-soft-yellow; 
+    background-color: $color-soft-yellow;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    
+
 }
 
 .row-3 {
@@ -124,7 +173,7 @@ body {
 
 
 
-   /* ===============
+/* ===============
   GALLERY 
    =============== */
 .gallery {
@@ -132,12 +181,11 @@ body {
 }
 
 
-   /* ===============
+/* ===============
    FOOTER 
    =============== */
 .footer {
     background-color: skyblue;
+    grid-column: 1 / -1;
+    grid-row: 7 / -1;
 }
-
-
-

@@ -25,7 +25,8 @@ body {
   grid-template-rows: 100vh repeat(3, 1fr) 2fr 2fr 1fr; }
 
 .main {
-  grid-row: 2 / 6; }
+  grid-row: 2 / 6;
+  grid-column: 1 / -1; }
 
 /* ===============
    HEADER 
@@ -37,8 +38,28 @@ body {
   background-size: cover;
   color: white;
   grid-column: 1 / -1;
-  grid-row: 1/ 1; }
+  grid-row: 1/ 1;
+  position: relative; }
+  .header__title {
+    position: absolute;
+    top: 25%;
+    text-transform: uppercase;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Fraunces", sans-serif;
+    font-size: 6.2rem;
+    letter-spacing: 0.123em;
+    font-weight: 800; }
+  .header__logo {
+    padding: 4rem; }
+  .header__logo-img {
+    height: 3.6rem; }
 
+/* ===============
+   ROWS
+   =============== */
 .row-2 {
   background-color: #fad400;
   grid-column: 1 / -1;
@@ -66,4 +87,6 @@ body {
    FOOTER 
    =============== */
 .footer {
-  background-color: skyblue; }
+  background-color: skyblue;
+  grid-column: 1 / -1;
+  grid-row: 7 / -1; }
