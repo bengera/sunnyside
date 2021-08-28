@@ -115,15 +115,84 @@ body {
 
     &__logo {
         padding: 4rem;
-        
+
     }
 
     &__logo-img {
         height: 3.6rem;
     }
 
+    &__arrow-down {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 15rem;
+    }
+
 
 }
+
+/* ===============
+   NAVIGATION - MAIN
+   =============== */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3rem;
+
+    &__nav {
+
+        margin: 0 auto 0 auto;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    &__list {
+
+        list-style: none;
+        text-align: center;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: #fff;
+            text-decoration: none;
+            padding: 1.7rem;
+
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid white;
+
+
+        }
+    }
+}
+
+.navigation nav ul li:nth-child(4) a {
+    background-color: white;
+    color: #000;
+    border-radius: 2.5rem;
+    border-bottom: 0;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #FFF;
+        background-color: rgba(255, 255, 255, 0.30);
+    }
+
+}
+
 
 
 
