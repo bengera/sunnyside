@@ -92,8 +92,58 @@ main {
   opacity: 1; }
 
 .row-3 {
-  background-color: #fe7867;
-  grid-row: 3 / 4; }
+  background-color: white;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .row-3__content {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto 10rem auto; }
+  .row-3__heading {
+    font-size: 5rem;
+    font-family: "Fraunces", sans-serif;
+    color: #23303e;
+    font-weight: 900;
+    margin-bottom: 2.2rem; }
+  .row-3__paragraph {
+    font-size: 2.3rem;
+    color: #5a636c;
+    margin-bottom: 4.2rem; }
+  .row-3__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.row-3__cta {
+  color: #23303e;
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2; }
+  .row-3__cta::after {
+    content: "";
+    width: calc(100% + 10px);
+    position: absolute;
+    border: 2px solid #fe7867;
+    background-color: #fe7867;
+    top: 15px;
+    height: 8px;
+    left: -5px;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 20px; }
 
 .row-4 {
   background-color: #458c7e; }
