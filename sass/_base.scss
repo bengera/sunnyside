@@ -12,6 +12,7 @@ $color-grayish-blue: hsl(232, 10%, 55%);
 $color-grayish-blue: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
 
+$color-white-2 :hsl(26, 3, 100);
 
 // FONT VARIABLES
 $font-barlow: 'Barlow',
@@ -20,7 +21,8 @@ sans-serif;
 $font-fraunces: 'Fraunces',
 sans-serif; //700,900
 
-
+//Padding
+$padding-small: 1.5rem;
 
 // GENERAL
 @mixin transition-basic {
@@ -55,11 +57,11 @@ html {
     }
 
     @media only screen and (max-width: $bp-medium) {
-        // font-size: 40%;
+        font-size: 40%;
     }
 
     @media only screen and (max-width: $bp-small) {
-        // font-size: 35%;
+        font-size: 35%;
     }
 
 }
@@ -80,150 +82,105 @@ body {
 
 }
 
-.main {
-    grid-row: 2 / 6;
-    grid-column: 1 / -1;
-}
-
-/* ===============
-   HEADER 
-   =============== */
-.header {
-    // background: url('../img/desktop-image-header.jpg');
-    background: url('../images/desktop/image-header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $color-white;
-    grid-column: 1 / -1;
-    grid-row: 1/ 1;
-    position: relative;
-
-    &__title {
-        position: absolute;
-        top: 25%;
-        text-transform: uppercase;
-        width: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-family: $font-fraunces;
-        font-size: 6.2rem;
-        letter-spacing: 0.123em;
-        font-weight: 800;
-    }
-
-    &__logo {
-        padding: 4rem;
-
-    }
-
-    &__logo-img {
-        height: 3.6rem;
-    }
-
-    &__arrow-down {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 15rem;
-    }
-
-
-}
-
-/* ===============
-   NAVIGATION - MAIN
-   =============== */
-
-.navigation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 3rem;
-
-    &__nav {
-
-        margin: 0 auto 0 auto;
-    }
-
-    &__item {
-        display: inline-block;
-        padding: 2rem;
-    }
-
-    &__list {
-
-        list-style: none;
-        text-align: center;
-    }
-
-    &__link {
-
-        &:link,
-        &:visited {
-            color: #fff;
-            text-decoration: none;
-            padding: 1.7rem;
-
-        }
-
-        &:hover,
-        &:active {
-            border-bottom: 2px solid white;
-
-
-        }
-    }
-}
-
-.navigation nav ul li:nth-child(4) a {
-    background-color: white;
-    color: #000;
-    border-radius: 2.5rem;
-    border-bottom: 0;
-    font-family: $font-fraunces;
-    text-transform: uppercase;
-
-    &:hover {
-        color: #FFF;
-        background-color: rgba(255, 255, 255, 0.30);
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===============
    ROWS
    =============== */
+main {
+    grid-column: 1 / -1;
+}
 
 .row-2 {
-    background-color: $color-soft-yellow;
+    background-color: $color-white-2;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+        // border: 2px solid black;
+        margin: 0 auto 10rem auto;
+               
+        
+    }
+
+    &__heading {
+        font-size:5rem;
+        font-family: $font-fraunces;
+        color: $color-dark-desaturated-blue;
+        font-weight: 900;
+        margin-bottom: 2.2rem;
+    }
+
+    &__paragraph {
+        font-size: 2.3rem;
+        color: $color-dark-grayish-blue;
+        margin-bottom: 4.2rem;
+    }
+
+    
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        
+    }
+
+    
 
 }
 
+.row-2__cta {
+    color: $color-dark-desaturated-blue;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        width: calc(100% + 10px);
+        position: absolute;
+        border: 2px solid $color-soft-yellow;
+        background-color: $color-soft-yellow;
+        top:15px;
+        height: 8px;
+        left: -5px;
+        z-index: -1;
+        opacity: 0.5;
+        border-radius: 20px;
+
+        
+        
+    }    
+}
+
+.row-2__cta:hover:after {
+    opacity: 1;
+}
+
+// div > *:not(:last-child) {
+//     display: block;
+//     margin-bottom: 30px; 
+// } 
+
 .row-3 {
     background-color: $color-soft-red;
+    grid-row: 3 / 4;
 }
 
 .row-4 {

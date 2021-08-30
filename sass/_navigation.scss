@@ -1,0 +1,59 @@
+/* ===============
+   NAVIGATION - MAIN
+   =============== */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3rem;
+
+    &__nav {
+
+        margin: 0 auto 0 auto;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    &__list {
+
+        list-style: none;
+        text-align: center;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+            padding: 2.2rem;
+
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-white;
+
+
+        }
+    }
+}
+
+.navigation nav ul li:nth-child(4) a {
+    background-color: $color-white;
+    color: #000;
+    border-radius: 2.5rem;
+    border-bottom: 0;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-white;
+        background-color: rgba(255, 255, 255, 0.30);
+    }
+
+}

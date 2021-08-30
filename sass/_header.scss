@@ -1,0 +1,47 @@
+/* ===============
+   HEADER 
+   =============== */
+.header {
+    // background: url('../img/desktop-image-header.jpg');
+    background: url('../images/desktop/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    grid-column: 1 / -1;
+    grid-row: 1/ 1;
+    position: relative;
+
+    &__title {
+        position: absolute;
+        top: 27%;
+        text-transform: uppercase;
+        width: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: $font-fraunces;
+        font-size: 6.2rem;
+        letter-spacing: 0.123em;
+        font-weight: 800;
+    }
+
+    &__logo {
+        padding: 4rem;
+
+    }
+
+    &__logo-img {
+        height: 3.6rem;
+    }
+
+    &__arrow-down {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 15rem;
+    }
+
+
+}
