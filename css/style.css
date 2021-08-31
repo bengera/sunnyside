@@ -28,13 +28,14 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh repeat(3, 1fr) 2fr 2fr 1fr; }
+  grid-template-rows: 100vh 1fr repeat(3, min-content); }
 
 /* ===============
    ROWS
    =============== */
 main {
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  grid-row: 2 / 3; }
 
 .row-2 {
   background-color: white;
@@ -145,20 +146,75 @@ main {
     opacity: 0.5;
     border-radius: 20px; }
 
-.row-4 {
-  background-color: #458c7e; }
+.row-3__cta:hover:after {
+  opacity: 1; }
+
+.row-4-left {
+  background-color: #458c7e;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  position: relative; }
+  .row-4-left__img-cherry, .row-4-left__img-orange {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .row-4-left__content-left {
+    position: absolute;
+    padding: 2rem;
+    width: 35%;
+    bottom: 15%;
+    left: 7%;
+    text-align: center;
+    margin-left: auto; }
+  .row-4-left__fruit-heading {
+    font-size: 3rem;
+    letter-spacing: 0em;
+    font-weight: 800;
+    font-family: "Fraunces", sans-serif;
+    color: #25564b; }
+  .row-4-left__paragraph {
+    font-size: 2rem;
+    color: #25564b; }
+
+.row-4-right__content-right {
+  position: absolute;
+  padding: 2rem;
+  width: 35%;
+  bottom: 20%;
+  right: 7%;
+  text-align: center;
+  margin-left: auto; }
+
+.row-4-right__fruit-heading-right {
+  font-size: 3rem;
+  letter-spacing: 0em;
+  font-weight: 800;
+  font-family: "Fraunces", sans-serif;
+  color: #19536b;
+  line-height: 8rem; }
+
+.row-4-right__paragraph-right {
+  font-size: 2rem;
+  color: #19536b; }
 
 /* ===============
    TESTIMONIALS 
    =============== */
 .testimonials {
-  background-color: orangered; }
+  background-color: orangered;
+  grid-row: 3/ 4;
+  grid-column: 1 / -1; }
 
 /* ===============
   GALLERY 
    =============== */
 .gallery {
-  background-color: yellowgreen; }
+  background-color: yellowgreen;
+  grid-column: 1 / -1;
+  grid-row: 4/ 5; }
 
 /* ===============
    FOOTER 
@@ -166,7 +222,7 @@ main {
 .footer {
   background-color: skyblue;
   grid-column: 1 / -1;
-  grid-row: 7 / -1; }
+  grid-row: 5 / 6; }
 
 /* ===============
    HEADER 
