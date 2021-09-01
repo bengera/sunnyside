@@ -49,7 +49,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     width: 60%;
-    margin: 0 auto 10rem auto; }
+    margin: 5rem auto 5rem auto; }
   .row-2__heading {
     font-size: 5rem;
     font-family: "Fraunces", sans-serif;
@@ -106,7 +106,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     width: 60%;
-    margin: 0 auto 10rem auto; }
+    margin: 5rem auto 5rem auto; }
   .row-3__heading {
     font-size: 5rem;
     font-family: "Fraunces", sans-serif;
@@ -149,56 +149,53 @@ main {
 .row-3__cta:hover:after {
   opacity: 1; }
 
-.row-4-left {
-  background-color: #458c7e;
+.row-4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  position: relative; }
-  .row-4-left__img-cherry, .row-4-left__img-orange {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .row-4-left__content-left {
+  grid-template-columns: repeat(2, 1fr); }
+
+.left-section {
+  background: url("../images/desktop/image-graphic-design.jpg"); }
+
+.right-section {
+  background: url("../images/desktop/image-photography.jpg"); }
+
+.left-section__heading {
+  color: #25564b; }
+
+.right-section__heading {
+  color: #19536b; }
+
+.right-section {
+  background: url("../images/desktop/image-photography.jpg"); }
+
+.left-section, .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 85rem; }
+  .left-section__content, .right-section__content {
+    width: 50%;
     position: absolute;
-    padding: 2rem;
-    width: 35%;
-    bottom: 15%;
-    left: 7%;
-    text-align: center;
-    margin-left: auto; }
-  .row-4-left__fruit-heading {
+    bottom: 10%;
+    top: 65%;
+    text-align: center; }
+  .left-section__heading, .right-section__heading {
     font-size: 3rem;
     letter-spacing: 0em;
     font-weight: 800;
     font-family: "Fraunces", sans-serif;
-    color: #25564b; }
-  .row-4-left__paragraph {
+    line-height: 88px; }
+  .left-section__paragraph-left, .right-section__paragraph-left {
     font-size: 2rem;
     color: #25564b; }
-
-.row-4-right__content-right {
-  position: absolute;
-  padding: 2rem;
-  width: 35%;
-  bottom: 20%;
-  right: 7%;
-  text-align: center;
-  margin-left: auto; }
-
-.row-4-right__fruit-heading-right {
-  font-size: 3rem;
-  letter-spacing: 0em;
-  font-weight: 800;
-  font-family: "Fraunces", sans-serif;
-  color: #19536b;
-  line-height: 8rem; }
-
-.row-4-right__paragraph-right {
-  font-size: 2rem;
-  color: #19536b; }
+  .left-section__paragraph-right, .right-section__paragraph-right {
+    font-size: 2rem;
+    color: #19536b; }
 
 /* ===============
    TESTIMONIALS 

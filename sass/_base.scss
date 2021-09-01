@@ -107,7 +107,7 @@ main {
         align-items: flex-start;
         justify-content: center;
         width: 60%;
-        margin: 0 auto 10rem auto;
+        margin: 5rem auto 5rem auto;
 
 
     }
@@ -195,7 +195,7 @@ main {
         align-items: flex-start;
         justify-content: center;
         width: 60%;
-        margin: 0 auto 10rem auto;
+        margin: 5rem auto 5rem auto;
     }
 
     &__heading {
@@ -259,91 +259,73 @@ main {
     opacity: 1;
 }
 
+.row-4 {
 
-
-
-
-
-
-
-
-
-.row-4-left {
-    background-color: $color-dark-moderate-cyan;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    position: relative;
-
-
-
-
-    &__img-cherry,
-    &__img-orange {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    &__content-left {
-
-        position: absolute;
-        padding: 2rem;
-        width: 35%;
-        // border: 2px solid black;
-        bottom: 15%;
-        left: 7%;
-        text-align: center;
-        margin-left: auto;
-
-    }
-
-
-
-    &__fruit-heading {
-        font-size: 3rem;
-        letter-spacing: 0em;
-        font-weight: 800;
-        font-family: $font-fraunces;
-        color: $color-dark-desaturated-cyan;
-
-
-    }
-
-    &__paragraph {
-        font-size: 2rem;
-        color: $color-dark-desaturated-cyan;
-
-
-    }
 
 
 }
 
-.row-4-right {
+.left-section {
+    background: url('../images/desktop/image-graphic-design.jpg');
+}
 
-    &__content-right {
+.right-section {
+    background: url('../images/desktop/image-photography.jpg');
+}
+
+.left-section__heading {
+    color: $color-dark-desaturated-cyan;
+}
+
+.right-section__heading {
+    color: $color-dark-blue;
+}
+
+.right-section {
+    background: url('../images/desktop/image-photography.jpg');
+}
+
+.left-section,.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // border: 1px solid black;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+    height: 85rem;
+
+
+
+    &__content {
+        width: 50%;
+        // border: 1px solid red;
         position: absolute;
-        padding: 2rem;
-        width: 35%;
-        // border: 2px solid black;
-        bottom: 20%;
-        right: 7%;
+        bottom: 10%;
+        top: 65%;
         text-align: center;
-        margin-left: auto;
+
+
     }
 
-    &__fruit-heading-right {
-
+    &__heading {
         font-size: 3rem;
         letter-spacing: 0em;
         font-weight: 800;
         font-family: $font-fraunces;
-        color: $color-dark-blue;
-        line-height: 8rem;
+        line-height: 88px;
 
+    }
+
+    &__paragraph-left {
+        font-size: 2rem;
+        color: $color-dark-desaturated-cyan;
 
 
     }
@@ -354,7 +336,111 @@ main {
 
 
     }
+
+    &__image-container {}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .row-4-left {
+//     background-color: $color-dark-moderate-cyan;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: 1fr;
+//     position: relative;
+
+
+
+
+//     &__img-cherry,
+//     &__img-orange {
+//         height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//     }
+
+//     &__content-left {
+
+//         position: absolute;
+//         padding: 2rem;
+//         width: 35%;
+//         // border: 2px solid black;
+//         bottom: 15%;
+//         left: 7%;
+//         text-align: center;
+//         margin-left: auto;
+
+//     }
+
+
+
+//     &__fruit-heading {
+//         font-size: 3rem;
+//         letter-spacing: 0em;
+//         font-weight: 800;
+//         font-family: $font-fraunces;
+//         color: $color-dark-desaturated-cyan;
+
+
+//     }
+
+//     &__paragraph {
+//         font-size: 2rem;
+//         color: $color-dark-desaturated-cyan;
+
+
+//     }
+
+
+// }
+
+// .row-4-right {
+
+//     &__content-right {
+//         position: absolute;
+//         padding: 2rem;
+//         width: 35%;
+//         // border: 2px solid black;
+//         bottom: 20%;
+//         right: 7%;
+//         text-align: center;
+//         margin-left: auto;
+//     }
+
+//     &__fruit-heading-right {
+
+//         font-size: 3rem;
+//         letter-spacing: 0em;
+//         font-weight: 800;
+//         font-family: $font-fraunces;
+//         color: $color-dark-blue;
+//         line-height: 8rem;
+
+
+
+//     }
+
+//     &__paragraph-right {
+//         font-size: 2rem;
+//         color: $color-dark-blue;
+
+
+//     }
+// }
 
 
 
