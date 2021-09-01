@@ -80,7 +80,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100vh 1fr 75vh repeat(2, min-content);
+    grid-template-rows: 100vh 1fr 75vh 60vh repeat(1, min-content);
 
 }
 
@@ -99,99 +99,7 @@ main {
 
 
 
-/* ===============
-   TESTIMONIALS 
-   =============== */
-.testimonials {
-    // background-color: orangered;
-    grid-row: 3/ 4;
-    grid-column: 1 / -1;
-    
-    &__heading {
-    text-align: center;  
-    font-family: $font-fraunces; 
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    color: $color-grayish-blue;
-    letter-spacing: 0.176em;
-    font-weight: 800;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    }
 
-    &__container {
-        // border: 2px solid black;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        gap: 10px;
-        margin: 1rem auto 1rem auto;
-        width:85%;
-        height: 40vh;
-    }
-
-    &__left,
-    &__center,
-    &__right
-    {
-        display: flex;
-        flex-direction: column;
-        color:Red;
-        // border: 1px solid red;
-        grid-column: 1 / 1;
-        grid-row: 1 / 1;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5rem;
-
-        
-        
-        
-    }
-
-    &__center {
-        color: blue;
-        grid-column: 2 / 2;
-        grid-row: 1 / 1;
-        
-    }
-
-    &__right {
-        color: green;
-        grid-column: 3 / 3;
-        grid-row: 1 / 1;
-        
-    }
-
-    &__profile-image {
-        border-radius: 50%;
-        width: 8rem;
-        height: auto;
-    }
-
-    &__message {
-        color: $color-dark-grayish-blue;
-        text-align: center;
-    }
-
-    &__name {
-        color: $color-dark-desaturated-blue;
-        font-family: $font-fraunces;
-        font-weight:900;
-    }
-
-    &__job {
-        color: $color-grayish-blue;    
-    }
-
-    &__name-job-container {
-        text-align: center;
-    }
-    
-
-    
-
-}
 
 
 
@@ -204,6 +112,24 @@ main {
     background-color: yellowgreen;
     grid-column: 1 / -1;
     grid-row: 4/ 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    
+    &__gallery-img-container {
+    
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    
 
 }
 
