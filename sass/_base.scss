@@ -73,13 +73,14 @@ body {
     font-size: 1.8rem;
     line-height: 1.6;
     overflow-x: hidden;
+    // min-height: 100%;
 
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100vh 1fr repeat(3, min-content);
+    grid-template-rows: 100vh 1fr 75vh repeat(2, min-content);
 
 }
 
@@ -92,355 +93,6 @@ main {
     grid-row: 2 / 3;
 }
 
-.row-2 {
-    background-color: $color-white-2;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 60%;
-        margin: 5rem auto 5rem auto;
-
-
-    }
-
-    &__heading {
-        font-size: 5rem;
-        font-family: $font-fraunces;
-        color: $color-dark-desaturated-blue;
-        font-weight: 900;
-        margin-bottom: 2.2rem;
-    }
-
-    &__paragraph {
-        font-size: 2.3rem;
-        color: $color-dark-grayish-blue;
-        margin-bottom: 4.2rem;
-    }
-
-
-
-    &__img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-
-    }
-
-
-
-}
-
-.row-2__cta {
-    color: $color-dark-desaturated-blue;
-    font-family: $font-fraunces;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-
-    &::after {
-        content: "";
-        width: calc(100% + 10px);
-        position: absolute;
-        border: 2px solid $color-soft-yellow;
-        background-color: $color-soft-yellow;
-        top: 15px;
-        height: 8px;
-        left: -5px;
-        z-index: -1;
-        opacity: 0.5;
-        border-radius: 20px;
-
-
-
-    }
-}
-
-.row-2__cta:hover:after {
-    opacity: 1;
-}
-
-// div > *:not(:last-child) {
-//     display: block;
-//     margin-bottom: 30px; 
-// } 
-
-.row-3 {
-    background-color: $color-white-2;
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    &__content {
-        grid-column: 2 / 2;
-        grid-row: 1 / 1;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 60%;
-        margin: 5rem auto 5rem auto;
-    }
-
-    &__heading {
-        font-size: 5rem;
-        font-family: $font-fraunces;
-        color: $color-dark-desaturated-blue;
-        font-weight: 900;
-        margin-bottom: 2.2rem;
-    }
-
-    &__paragraph {
-        font-size: 2.3rem;
-        color: $color-dark-grayish-blue;
-        margin-bottom: 4.2rem;
-    }
-
-
-
-    &__img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-
-    }
-
-
-}
-
-.row-3__cta {
-    color: $color-dark-desaturated-blue;
-    font-family: $font-fraunces;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-
-    &::after {
-        content: "";
-        width: calc(100% + 10px);
-        position: absolute;
-        border: 2px solid $color-soft-red;
-        background-color: $color-soft-red;
-        top: 15px;
-        height: 8px;
-        left: -5px;
-        z-index: -1;
-        opacity: 0.5;
-        border-radius: 20px;
-
-
-
-    }
-}
-
-.row-3__cta:hover:after {
-    opacity: 1;
-}
-
-.row-4 {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-
-}
-
-.left-section {
-    background: url('../images/desktop/image-graphic-design.jpg');
-}
-
-.right-section {
-    background: url('../images/desktop/image-photography.jpg');
-}
-
-.left-section__heading {
-    color: $color-dark-desaturated-cyan;
-}
-
-.right-section__heading {
-    color: $color-dark-blue;
-}
-
-.right-section {
-    background: url('../images/desktop/image-photography.jpg');
-}
-
-.left-section,.right-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    // border: 1px solid black;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-
-    height: 85rem;
-
-
-
-    &__content {
-        width: 50%;
-        // border: 1px solid red;
-        position: absolute;
-        bottom: 10%;
-        top: 65%;
-        text-align: center;
-
-
-    }
-
-    &__heading {
-        font-size: 3rem;
-        letter-spacing: 0em;
-        font-weight: 800;
-        font-family: $font-fraunces;
-        line-height: 88px;
-
-    }
-
-    &__paragraph-left {
-        font-size: 2rem;
-        color: $color-dark-desaturated-cyan;
-
-
-    }
-
-    &__paragraph-right {
-        font-size: 2rem;
-        color: $color-dark-blue;
-
-
-    }
-
-    &__image-container {}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .row-4-left {
-//     background-color: $color-dark-moderate-cyan;
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-template-rows: 1fr;
-//     position: relative;
-
-
-
-
-//     &__img-cherry,
-//     &__img-orange {
-//         height: 100%;
-//         width: 100%;
-//         object-fit: cover;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//     }
-
-//     &__content-left {
-
-//         position: absolute;
-//         padding: 2rem;
-//         width: 35%;
-//         // border: 2px solid black;
-//         bottom: 15%;
-//         left: 7%;
-//         text-align: center;
-//         margin-left: auto;
-
-//     }
-
-
-
-//     &__fruit-heading {
-//         font-size: 3rem;
-//         letter-spacing: 0em;
-//         font-weight: 800;
-//         font-family: $font-fraunces;
-//         color: $color-dark-desaturated-cyan;
-
-
-//     }
-
-//     &__paragraph {
-//         font-size: 2rem;
-//         color: $color-dark-desaturated-cyan;
-
-
-//     }
-
-
-// }
-
-// .row-4-right {
-
-//     &__content-right {
-//         position: absolute;
-//         padding: 2rem;
-//         width: 35%;
-//         // border: 2px solid black;
-//         bottom: 20%;
-//         right: 7%;
-//         text-align: center;
-//         margin-left: auto;
-//     }
-
-//     &__fruit-heading-right {
-
-//         font-size: 3rem;
-//         letter-spacing: 0em;
-//         font-weight: 800;
-//         font-family: $font-fraunces;
-//         color: $color-dark-blue;
-//         line-height: 8rem;
-
-
-
-//     }
-
-//     &__paragraph-right {
-//         font-size: 2rem;
-//         color: $color-dark-blue;
-
-
-//     }
-// }
 
 
 
@@ -451,10 +103,97 @@ main {
    TESTIMONIALS 
    =============== */
 .testimonials {
-    background-color: orangered;
+    // background-color: orangered;
     grid-row: 3/ 4;
     grid-column: 1 / -1;
+    
+    &__heading {
+    text-align: center;  
+    font-family: $font-fraunces; 
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $color-grayish-blue;
+    letter-spacing: 0.176em;
+    font-weight: 800;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    }
+
+    &__container {
+        // border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+        margin: 1rem auto 1rem auto;
+        width:85%;
+        height: 40vh;
+    }
+
+    &__left,
+    &__center,
+    &__right
+    {
+        display: flex;
+        flex-direction: column;
+        color:Red;
+        // border: 1px solid red;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem;
+
+        
+        
+        
+    }
+
+    &__center {
+        color: blue;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        
+    }
+
+    &__right {
+        color: green;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+        
+    }
+
+    &__profile-image {
+        border-radius: 50%;
+        width: 8rem;
+        height: auto;
+    }
+
+    &__message {
+        color: $color-dark-grayish-blue;
+        text-align: center;
+    }
+
+    &__name {
+        color: $color-dark-desaturated-blue;
+        font-family: $font-fraunces;
+        font-weight:900;
+    }
+
+    &__job {
+        color: $color-grayish-blue;    
+    }
+
+    &__name-job-container {
+        text-align: center;
+    }
+    
+
+    
+
 }
+
+
 
 
 

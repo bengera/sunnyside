@@ -1,0 +1,249 @@
+.row-2 {
+    background-color: $color-white-2;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+        margin: 5rem auto 5rem auto;
+
+
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-family: $font-fraunces;
+        color: $color-dark-desaturated-blue;
+        font-weight: 900;
+        margin-bottom: 2.2rem;
+    }
+
+    &__paragraph {
+        font-size: 2.3rem;
+        color: $color-dark-grayish-blue;
+        margin-bottom: 4.2rem;
+    }
+
+
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+
+}
+
+.row-2__cta {
+    color: $color-dark-desaturated-blue;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        width: calc(100% + 10px);
+        position: absolute;
+        border: 2px solid $color-soft-yellow;
+        background-color: $color-soft-yellow;
+        top: 15px;
+        height: 8px;
+        left: -5px;
+        z-index: -1;
+        opacity: 0.5;
+        border-radius: 20px;
+
+
+
+    }
+}
+
+.row-2__cta:hover:after {
+    opacity: 1;
+}
+
+// div > *:not(:last-child) {
+//     display: block;
+//     margin-bottom: 30px; 
+// } 
+
+.row-3 {
+    background-color: $color-white-2;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__content {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+        margin: 5rem auto 5rem auto;
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-family: $font-fraunces;
+        color: $color-dark-desaturated-blue;
+        font-weight: 900;
+        margin-bottom: 2.2rem;
+    }
+
+    &__paragraph {
+        font-size: 2.3rem;
+        color: $color-dark-grayish-blue;
+        margin-bottom: 4.2rem;
+    }
+
+
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+}
+
+.row-3__cta {
+    color: $color-dark-desaturated-blue;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        width: calc(100% + 10px);
+        position: absolute;
+        border: 2px solid $color-soft-red;
+        background-color: $color-soft-red;
+        top: 15px;
+        height: 8px;
+        left: -5px;
+        z-index: -1;
+        opacity: 0.5;
+        border-radius: 20px;
+
+
+
+    }
+}
+
+.row-3__cta:hover:after {
+    opacity: 1;
+}
+
+.row-4 {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.left-section {
+    background: url('../images/desktop/image-graphic-design.jpg');
+}
+
+.right-section {
+    background: url('../images/desktop/image-photography.jpg');
+}
+
+.left-section__heading {
+    color: $color-dark-desaturated-cyan;
+}
+
+.right-section__heading {
+    color: $color-dark-blue;
+}
+
+.right-section {
+    background: url('../images/desktop/image-photography.jpg');
+}
+
+.left-section,.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+    height: 85rem;
+
+
+
+    &__content {
+        width: 50%;
+        position: absolute;
+        bottom: 10%;
+        top: 65%;
+        text-align: center;
+
+
+    }
+
+    &__heading {
+        font-size: 3rem;
+        letter-spacing: 0em;
+        font-weight: 800;
+        font-family: $font-fraunces;
+        line-height: 88px;
+
+    }
+
+    &__paragraph-left {
+        font-size: 2rem;
+        color: $color-dark-desaturated-cyan;
+
+
+    }
+
+    &__paragraph-right {
+        font-size: 2rem;
+        color: $color-dark-blue;
+
+
+    }
+
+    
+
+
+}
+
+

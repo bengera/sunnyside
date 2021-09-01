@@ -15,6 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+
+
   <!-- <script defer src="js/script.js"></script> -->
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -42,10 +45,10 @@
       <div class="navigation">
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">About</li></a>
-            <li class="navigation__item"><a href="#" class="navigation__link">Services</li></a>
-            <li class="navigation__item"><a href="#" class="navigation__link">Projects</li></a>
-            <li class="navigation__item"><a href="#" class="navigation__link">Contact</li></a>
+            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -100,60 +103,90 @@
               clients’ attention.
             </p>
           </div>
-        </div> <!--left section end-->
+        </div>
+        <!--left section end-->
 
 
         <div class="right-section">
           <div class="right-section__content">
             <h3 class="right-section__heading">Photography</h3>
             <p class="right-section__paragraph-right">
-              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
             </p>
           </div>
-        </div> <!--right section end-->
+        </div>
+        <!--right section end-->
 
       </section>
 
-      <!-- <section class="row-4-left">
-        
-        <div class="row-4-left__content-left">
-        <h3 class="row-4-left__fruit-heading">Graphic design</h3><br>
-        <div class="row-4-left__paragraph">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-          clients’ attention.</div>
-      </div>
-        <div class="row-4-left__image-container"><img src="images/desktop/image-graphic-design.jpg" alt="transform-img" class="row-4-left__img-cherry"></div>
-        
-         -->
-
-      <!-- <div class="row-4-right__image-container"><img src="images/desktop/image-photography.jpg" alt="transform-img" class="row-4-left__img-cherry"></div> 
-        <div class="row-4-right__content-right">
-        <h3 class="row-4-right__fruit-heading-right">Photography</h3>
-       <div class="row-4-right__paragraph-right"></div>
-      </div>  -->
-
-
-      <!--
-        Photography
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image. -->
-      <!--content left end-->
     </main>
 
     <section class="testimonials">
-      Client testimonials
+      <h4 class="testimonials__heading">Client testimonials</h4>
+      <div class="testimonials__container">
 
-      We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-      Emily R.
-      Marketing Director
+        <!--Testimonials left start-->
+        <div class="testimonials__left">
+          <div class="testimonials__profile-image-container">
+            <img src="images/image-emily.jpg" alt="emily" class="testimonials__profile-image">
+          </div>
+          <p class="testimonials__message">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </p>
+          <div class="testimonials__name-job-container">
+            <p class="testimonials__name">
+              Emily R.
+            </p>
+            <p class="testimonials__job">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+        <!--Testimonials left end-->
 
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-      enjoyable
-      experience.
-      Thomas S.
-      Chief Operating Officer
+        <!--Testimonials center start-->
+        <div class="testimonials__center">
+          <div class="testimonials__profile-image-container">
+            <img src="images/image-thomas.jpg" alt="Thomas" class="testimonials__profile-image">
+          </div>
+          <p class="testimonials__message">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable
+            experience.
+          </p>
+          <div class="testimonials__name-job-container">
+            <p class="testimonials__name">
+              Thomas S.
+            </p>
+            <p class="testimonials__job">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+        <!--Testimonials center end-->
 
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-      Jennie F.
-      Business Owner
+        <!--Testimonials right start-->
+        <div class="testimonials__right">
+          <div class="testimonials__profile-image-container">
+            <img src="images/image-jennie.jpg" alt="Thomas" class="testimonials__profile-image">
+          </div>
+          <p class="testimonials__message">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <div class="testimonials__name-job-container">
+            <p class="testimonials__name">
+              Jennie F.
+            </p>
+            <p class="testimonials__job">
+              Business Owner
+            </p>
+          </div>
+        </div>
+                
+      </div>    
+      <!--testimonials-tontainer-end-->
     </section>
 
     <section class="gallery">
@@ -164,7 +197,7 @@
 
 
     <footer class="footer">
-      <footer class="logo">Logo</footer>
+      <div class="footer__logo"></div>
       About
       Services
       Projects
