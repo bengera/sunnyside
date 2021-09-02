@@ -29,6 +29,9 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100vh 1fr 75vh 60vh 35vh; }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      grid-template-rows: 75vh 1fr 75vh 60vh 35vh; } }
 
 /* ===============
    ROWS
@@ -112,6 +115,10 @@ main {
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 62.5em) {
+    .row-2 {
+      display: flex;
+      flex-direction: column-reverse; } }
   .row-2__content {
     display: flex;
     flex-direction: column;
@@ -119,6 +126,9 @@ main {
     justify-content: center;
     width: 60%;
     margin: 5rem auto 5rem auto; }
+    @media only screen and (max-width: 62.5em) {
+      .row-2__content {
+        height: 50rem; } }
   .row-2__heading {
     font-size: 5rem;
     font-family: "Fraunces", sans-serif;
@@ -167,6 +177,10 @@ main {
   grid-row: 3 / 4;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 62.5em) {
+    .row-3 {
+      display: flex;
+      flex-direction: column-reverse; } }
   .row-3__content {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
@@ -176,6 +190,9 @@ main {
     justify-content: center;
     width: 60%;
     margin: 5rem auto 5rem auto; }
+    @media only screen and (max-width: 62.5em) {
+      .row-3__content {
+        height: 50rem; } }
   .row-3__heading {
     font-size: 5rem;
     font-family: "Fraunces", sans-serif;
@@ -221,6 +238,10 @@ main {
 .row-4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (max-width: 62.5em) {
+    .row-4 {
+      display: flex;
+      flex-direction: column; } }
 
 .left-section {
   background: url("../images/desktop/image-graphic-design.jpg"); }
@@ -290,6 +311,11 @@ main {
     margin: 1rem auto 1rem auto;
     width: 85%;
     height: 40vh; }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__container {
+        display: flex;
+        flex-direction: column;
+        height: 0; } }
   .testimonials__left, .testimonials__center, .testimonials__right {
     display: flex;
     flex-direction: column;
@@ -299,6 +325,9 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__left, .testimonials__center, .testimonials__right {
+        gap: 10px; } }
   .testimonials__center {
     color: blue;
     grid-column: 2 / 2;
@@ -332,6 +361,10 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
+  @media only screen and (max-width: 62.5em) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr; } }
   .gallery__img {
     height: 100%;
     width: 100%;

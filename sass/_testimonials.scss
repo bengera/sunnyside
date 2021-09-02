@@ -27,6 +27,12 @@
         margin: 1rem auto 1rem auto;
         width:85%;
         height: 40vh;
+
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            flex-direction: column;
+            height: 0;
+        }
     }
 
     &__left,
@@ -42,6 +48,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            gap: 10px;
+        }
 
         
         
