@@ -28,13 +28,13 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh 1fr 75vh 60vh 35vh; }
+  grid-template-rows: 100vh 1fr 75vh min-content 35vh; }
   @media only screen and (max-width: 62.5em) {
     .container {
-      grid-template-rows: 75vh 1fr 80vh 60vh 35vh; } }
+      grid-template-rows: 75vh 1fr 125rem min-content 35vh; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      grid-template-rows: 75vh 1fr 130rem 60vh 35vh; } }
+      grid-template-rows: 75vh 1fr 130rem min-content 35vh; } }
 
 /* ===============
    ROWS
@@ -376,11 +376,8 @@ main {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr 1fr; } }
   .gallery__img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+    height: auto;
+    width: 100%; }
 
 /* ===============
    FOOTER 

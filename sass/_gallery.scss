@@ -1,8 +1,8 @@
 /* ===============
   GALLERY 
    =============== */
-   .gallery {
-    
+.gallery {
+
     grid-column: 1 / -1;
     grid-row: 4/ 5;
     display: grid;
@@ -11,19 +11,25 @@
 
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;   
+        grid-template-rows: 1fr 1fr;
+
+       
+
+
     }
-    
-   
+
+     
+
+
     &__img {
-        height: 100%;
+        height: auto;
         width: 100%;
-        object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        // object-fit: cover;
+        // background-position: center;
+        // background-repeat: no-repeat;
     }
-    
-    
-    
+
+
+
 
 }
