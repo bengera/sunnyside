@@ -86,7 +86,7 @@ body {
     grid-template-rows: 100vh 1fr 75vh 60vh 35vh;
 
     @media only screen and (max-width: $bp-large) {
-        grid-template-rows: 75vh 1fr 75vh 60vh 35vh;
+        grid-template-rows: 75vh 1fr 80vh 60vh 35vh;
     }
 
 }

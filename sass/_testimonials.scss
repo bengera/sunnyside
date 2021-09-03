@@ -5,6 +5,8 @@
     // background-color: orangered;
     grid-row: 3/ 4;
     grid-column: 1 / -1;
+
+    
     
     &__heading {
     text-align: center;  
@@ -16,6 +18,8 @@
     font-weight: 800;
     margin-top: 10rem;
     margin-bottom: 5rem;
+
+    
     }
 
     &__container {
@@ -31,7 +35,8 @@
         @media only screen and (max-width: $bp-large) {
             display: flex;
             flex-direction: column;
-            height: 0;
+            min-height: 70vh;
+            width: 65%;
         }
     }
 
@@ -51,6 +56,7 @@
 
         @media only screen and (max-width: $bp-large) {
             gap: 10px;
+            padding: 3rem;
         }
 
         
@@ -81,6 +87,11 @@
     &__message {
         color: $color-dark-grayish-blue;
         text-align: center;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-bottom: 2rem;
+        }
+        
     }
 
     &__name {
