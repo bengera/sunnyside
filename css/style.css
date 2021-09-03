@@ -32,6 +32,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .container {
       grid-template-rows: 75vh 1fr 80vh 60vh 35vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      grid-template-rows: 75vh 1fr 130rem 60vh 35vh; } }
 
 /* ===============
    ROWS
@@ -280,6 +283,9 @@ main {
     font-weight: 800;
     font-family: "Fraunces", sans-serif;
     line-height: 88px; }
+    @media only screen and (max-width: 37.5em) {
+      .left-section__heading, .right-section__heading {
+        line-height: 65px; } }
   .left-section__paragraph-left, .right-section__paragraph-left {
     font-size: 2rem;
     color: #25564b; }
