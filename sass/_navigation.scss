@@ -1,5 +1,5 @@
 /* ===============
-   NAVIGATION - MAIN
+   NAVIGATION - MAIN DESKTOP
    =============== */
 
 .navigation {
@@ -41,7 +41,13 @@
 
         }
     }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none
+    }
 }
+
+
 
 .navigation nav ul li:nth-child(4) a {
     background-color: $color-white;
@@ -57,3 +63,133 @@
     }
 
 }
+
+
+/* ===============
+   NAVIGATION - MAIN mOBILE
+   =============== */
+
+   .hamburger-btn {
+
+    @media only screen and (max-width: $bp-medium) {
+  
+      position: absolute;
+      // position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      top: 7%;
+      right: 5%;
+      z-index: 2000;
+  
+  
+  
+      &__burger {
+        width: 40px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+  
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 3.5px;
+          background: #fff;
+          border-radius: 5px;
+          transition: all .5s ease-in-out;
+  
+        }
+  
+        &:before {
+          transform: translateY(-16px);
+          top: 4px;
+        }
+  
+        &:after {
+          transform: translateY(16px);
+          top: -4px;
+        }
+  
+  
+      }
+    }
+  
+  
+  }
+
+//OPEN NAV MOBILE CHANGES
+
+
+  .navigation.open {
+    background-color: $color-white;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    left: 5%;
+    padding: 3rem;
+    z-index: 3000;
+    height: calc(100% / 2);
+        
+
+   
+}
+
+.navigation.open ul {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.navigation.open a {
+    font-size: 3rem;
+
+    &:link,
+        &:visited {
+            color: $color-dark-grayish-blue;
+            text-decoration: none;
+            padding: 2.2rem;
+
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-white;
+
+
+        }
+}
+
+.navigation.open ul {
+    margin-top: 3rem;
+}
+
+.navigation.open nav ul li:nth-child(4) a {
+    background-color: $color-white;
+    color: #000;
+    border-radius: 3.5rem;
+    border-bottom: 0;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    background-color: $color-soft-yellow;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-soft-yellow;
+    }
+
+}
+
+
+
+
+
+
+
