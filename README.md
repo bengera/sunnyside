@@ -11,10 +11,8 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Author](#author)
+
 
 
 ## Overview
@@ -35,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://bengera.github.io/sunnyside/)
+- Solution URL: [Sunnyside Landing page](https://bengera.github.io/sunnyside/)
 
 
 <!-- ## My process -->
@@ -56,13 +54,13 @@ Using the BEM method I was able to write more scalable and maintainble CSS.
 
 I used very basic DOM manipulation to create a toggle effect for the mobile navigation.
 
-```html
+<!-- ```html
 
 ```
 
 ```css
 
-```
+``` -->
 
 ```js
 hamburgerNav.addEventListener('click', () => {
@@ -79,8 +77,8 @@ hamburgerNav.addEventListener('click', () => {
 
 ## Author
 
-- Website - [Add your name here](https://bengera.github.io/main-portfolio/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/bengera)
+- Website - [Ben Geraghty](https://bengera.github.io/main-portfolio/)
+- Frontend Mentor - [bengera](https://www.frontendmentor.io/profile/bengera)
 
 
 
