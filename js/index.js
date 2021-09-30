@@ -4,6 +4,8 @@
 const hamburgerNav = document.querySelector('.hamburger-btn')
 const navigation = document.querySelector('.navigation')
 
+
+
 hamburgerNav.addEventListener('click', () => {
     if (navigation.style.display === "none") {
         navigation.style.display="block";
