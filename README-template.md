@@ -29,7 +29,10 @@ Users should be able to:
 ### Screenshot
 
 <!-- ![](../screenshot.jpg) -->
-![Design preview for the Sunnyside agency landing page coding challenge](./screenshot/screenshot.jpg)
+<!-- ![Design preview for the Sunnyside agency landing page coding challenge](./screenshot/screenshot.jpg) -->
+![Sunnyside-preview](https://github.com/bengera/sunnyside/blob/main/screenshot/screenshot.JPG)
+
+
 
 
 
